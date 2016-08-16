@@ -1,5 +1,3 @@
-[TOC]
-
 # EncodeDecode_Java
 
 ## Brief
