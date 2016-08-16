@@ -26,6 +26,7 @@ public String getSHA(int algorithmOption, String plainText, Boolean LetterCase){
 #### Parameter Explantion
 ##### getMD5()
 1. int bits:
+
 		'16' ==> 'generate 16bits hash'
 		'32' ==> 'generate 32bits hash'
 
@@ -60,16 +61,16 @@ public String getSHA(int algorithmOption, String plainText, Boolean LetterCase){
 
 		That's how it works.
 
-2. String plainText
+2. String plainText:
 		just something you want to encode
 
-3. Boolean LetterCase)
+3. Boolean LetterCase:
 		'false' ==> 'Lowercase'
         'true' ==> 'Uppercase'
 
 
 # Author
-[Gabriel](http://github.com/Gabirel)
+[Gabriel](https://github.com/Gabirel)
 
 
 # Bugs && Feedback
