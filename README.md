@@ -60,7 +60,7 @@ public String getSHA(int algorithmOption, String plainText, Boolean LetterCase){
 		```
         If you want to encode with `SHA-1`, just use 
         ```java
-        MessageDigest messageDigest = MessageDigest.getInstance(algorithm[algorithmOption]);` 
+        MessageDigest messageDigest = MessageDigest.getInstance(algorithm[algorithmOption]);
         ```
 
 		That's how it works.
