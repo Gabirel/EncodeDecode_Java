@@ -34,6 +34,7 @@ public String getSHA(int algorithmOption, String plainText, Boolean LetterCase){
         just something you want to encode
 
 3. Boolean LetterCase:
+
 		'false' ==> 'Lowercase'
         'true' ==> 'Uppercase'
 
