@@ -31,6 +31,7 @@ public String getSHA(int algorithmOption, String plainText, Boolean LetterCase){
 		'32' ==> 'generate 32bits hash'
 
 2. String plainText:
+
         just something you want to encode
 
 3. Boolean LetterCase:
@@ -41,6 +42,7 @@ public String getSHA(int algorithmOption, String plainText, Boolean LetterCase){
 
 #### getSHA()
 1. int algorithmOption:
+
 	- Value:
 	
         	'0' ==> 'SHA-1'
@@ -64,6 +66,7 @@ public String getSHA(int algorithmOption, String plainText, Boolean LetterCase){
 		That's how it works.
 
 2. String plainText:
+
 		just something you want to encode
 
 3. Boolean LetterCase:
