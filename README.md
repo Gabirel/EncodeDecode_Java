@@ -42,6 +42,7 @@ public String getSHA(int algorithmOption, String plainText, Boolean LetterCase){
 #### getSHA()
 1. int algorithmOption:
 	- Value:
+	
         	'0' ==> 'SHA-1'
             '1' ==> 'SHA-224'
             '2' ==> 'SHA-256'
@@ -66,6 +67,7 @@ public String getSHA(int algorithmOption, String plainText, Boolean LetterCase){
 		just something you want to encode
 
 3. Boolean LetterCase:
+
 		'false' ==> 'Lowercase'
         'true' ==> 'Uppercase'
 
