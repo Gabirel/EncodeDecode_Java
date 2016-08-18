@@ -10,7 +10,7 @@ import java.util.Base64;
  */
 public class EncodeReversible {
 
-    //This stupid function will give you Base74(Encoding)
+    //This stupid function will give you Base64(Encoding)
     public String getBase64(String plainText){
         String cipherText;
 

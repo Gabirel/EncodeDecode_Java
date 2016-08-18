@@ -1,4 +1,4 @@
-# EncodeDecode_Java
+ EncodeDecode_Java
 
 ## Brief
 This reposity includes encrption(md5, sha-*) and decrpytion. Simple few lines code. Do it as simple as I can.
@@ -7,6 +7,10 @@ This reposity includes encrption(md5, sha-*) and decrpytion. Simple few lines co
 The code is small, and easy to understand. You won't get too long to understand it.
 
 Also, it is easy to customize, especially `getSHA()`
+
+
+- - -
+
 
 ### EncodeOneway.java
 #### GENERAL
@@ -73,6 +77,88 @@ public String getSHA(int algorithmOption, String plainText, Boolean LetterCase){
 
 		'false' ==> 'Lowercase'
         'true' ==> 'Uppercase'
+
+
+-----
+
+### EncodeReversible.java
+#### GENERAL
+In EncodeReversible.java, there's only two functions. They are as followd:
+```java
+//This stupid function will give you Base64(Encoding)
+public String getBase64(String plainText){
+	...
+}
+
+
+//This stupid function will give you URL-encoded String/Text
+public String getURLEncoded(String plainText){
+	...
+}
+```
+
+#### Parameter Explantion
+##### getBase64()
+1. String plainText:
+
+        just something you want to encode
+
+
+##### getURLEncoded()
+1. String plainText:
+
+		just something you want to encode
+
+
+#### Something else
+1. About using `java.util.Base64`
+
+        I use newest `java.util.Base64`. Because it is faster than `com.sum.misc` and `org.apache.commons.codec.binary`. I recommend you to use this too.
+
+2. Reference
+
+		https://magiclen.org/java-base64/
+
+        PS： I hope you understand traditonal Chinese. Otherwise, don't look at it.
+
+
+
+
+- - -
+
+
+### Decode.java
+#### GENERAL
+In this damn source file, you can only find two functions AGAIN.
+```java
+//This can decode damn Base64 value into human-readable string
+public String reverseBase64(String cipherText) {
+	...
+}
+
+
+//This can decode encoded version of URL
+public String reverseURLEncode(String urlEncodedText){
+	...
+}
+```
+
+
+#### Parameter Explantion
+##### reverseBase64()
+1. String cipherText:
+
+		just something you want to decode
+
+
+##### reverseURLEncode()
+1. String cipherText()
+
+		just something you want to decode
+
+
+
+- - -
 
 
 # Author
