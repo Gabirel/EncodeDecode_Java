@@ -1,0 +1,33 @@
+import java.util.Base64;
+
+/**
+ * Created by Gabirel on 8/18/16.
+ * 1. Base64
+ * 2. Base64 img
+ * 3. URL
+ * 4. FULL URL Encode??(Not sure)
+ * Reference: https://magiclen.org/java-base64/
+ */
+public class EncodeReversible {
+
+    //This stupid function will give you Base74(Encoding)
+    public String getBase64(String plainText){
+        String cipherText;
+
+        Base64.Encoder encoder = Base64.getEncoder();
+
+        cipherText = encoder.encodeToString(plainText.getBytes());
+        return cipherText;
+    }
+
+
+    //This stupid function will give you URL-encoded String/Text
+    public String getURLEncoded(String plainText){
+        String urlEncodedText;
+
+        Base64.Encoder encoder = Base64.getUrlEncoder();
+        urlEncodedText = encoder.encodeToString(plainText.getBytes());
+
+        return urlEncodedText;
+    }
+}
