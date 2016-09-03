@@ -97,18 +97,6 @@ public String getURLEncoded(String plainText){
 }
 ```
 
-#### Parameter Explantion
-##### getBase64()
-1. String plainText:
-
-        just something you want to encode
-
-
-##### getURLEncoded()
-1. String plainText:
-
-		just something you want to encode
-
 
 #### Something else
 1. About using `java.util.Base64`
@@ -142,21 +130,6 @@ public String reverseURLEncode(String urlEncodedText){
 	...
 }
 ```
-
-
-#### Parameter Explantion
-##### reverseBase64()
-1. String cipherText:
-
-		just something you want to decode
-
-
-##### reverseURLEncode()
-1. String cipherText()
-
-		just something you want to decode
-
-
 
 - - -
 
