@@ -1,5 +1,5 @@
-package Converter.lib;
-
+import java.io.UnsupportedEncodingException;
+import java.net.URLDecoder;
 import java.util.Base64;
 
 /**
@@ -18,12 +18,24 @@ public class Decode {
     }
 
 
-    public String reverseURLEncode(String urlEncodedText){
-       String plainText;
+    public String reverseBase64URLEncode(String urlEncodedText) {
+        String plainText;
 
         Base64.Decoder decoder = Base64.getUrlDecoder();
 
         plainText = new String(decoder.decode(urlEncodedText));
+        return plainText;
+    }
+
+
+    public String reverseURLEncode(String urlEncodedText) {
+        String plainText;
+
+        try {
+            plainText = URLDecoder.decode(urlEncodedText, "UTF-8");
+        } catch (UnsupportedEncodingException e) {
+            throw new RuntimeException(e);
+        }
         return plainText;
     }
 }
